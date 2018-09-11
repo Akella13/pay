@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-itunes-app" content="app-id=440635615">
+  <title>Order</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto col-md-5">
+                <a class="header__homebank" href="/">
+                    <img class="header__logo-wrapper" src="static/images/logo-homebank.png" alt="homebank-logo">
+                </a>
+                <a class="header__dot"></a>
+                <a>
+                    <img class="header__logo-wrapper" src="static/images/logo-visa.png" alt="visa-logo">
+                </a>
+            </div>
+            <div class="col-auto col-md-7 static">
+                <nav class="header__nav" id="js-header__nav">
+                    <a data-block="#js-connection">Предпринимателям</a>
+                    <a data-block="#js-steps">Владельцам карт</a>
+                    <a data-block="#js-benefits">О продукте</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header__ham-wrapper">
+        <div class="header__ham" id="js-header__ham">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>  
+            <span></span>
+        </div>
+    </div>
+</header>
+
+
+  <div class="order main-container">
+    <div class="container order__container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2 class="heading heading--h2 heading--margin1 heading--white-color">
+                    Заказ QR-кода
+                </h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-9">
+                <h4 class="heading heading--h5 heading--white-color text--center">
+                    Мы можем отправить QR-код в электронном виде PNG-файлом, а можем в дополнение к нему изготовить для вас печатный QR-код на специальных POS-материалах: тейблтент, бейдж, табличка на прищепке и папка для счёта. Кроме этого, в опции "электронный и печатный" есть возможность заказать наклейку на дверь.
+                </h4>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-8 order__form">
+                <form class="row justify-content-center" action="">
+                    <div class="col-12">
+                        <h2 class="heading heading--h3 padding-top-2 padding-bottom-1 text--center">
+                            Точка продаж
+                        </h2>
+                        <h5 class="heading heading--h4 padding-bottom-1 heading--text-align1 heading--line-height1">
+                            Информация о точке продаж (POS, кассе), которую необходимо оборудовать терминалом.
+                        </h5>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <input type="text" placeholder="Город" class="input order__input">
+                        <input type="text" placeholder="Торговое название" class="input order__input">
+                        <input type="text" placeholder="Режим работы" class="input order__input">
+                        <input type="text" placeholder="БИН или ИИН команды" class="input order__input">
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <input type="text" placeholder="Адрес" class="input order__input">
+                        <input type="text" placeholder="Вид деятельности" class="input order__input">
+                        <input type="text" placeholder="Мобильный телефон" class="input order__input">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h4 class="heading heading--h5 heading--padding5">
+                            Вид статического QR-кода
+                        </h4>
+                        <ul>
+                            <li>
+                                <input id="js-qrcode-off" checked type="radio" name="code-info" class="order__radio">
+                                <label for="js-qrcode-off" class="order__label">
+                                    электронный
+                                </label>
+                            </li>
+                            <li>
+                                <input id="js-qrcode-on" type="radio" name="code-info" class="order__radio">
+                                <label for="js-qrcode-on" class="order__label">
+                                    электронный и печатный
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <h4 class="heading heading--h5 heading--padding5">
+                            Вид клиента
+                        </h4>
+                        <ul>
+                            <li>
+                                <input id="c-1" type="radio" name="client-info" class="order__radio">
+                                <label for="c-1" class="order__label">
+                                    есть счёт юрлица или POS-терминал в Казкоме
+                                </label>
+                            </li>
+                            <li>
+                                <input id="c-2" type="radio" name="client-info" class="order__radio">
+                                <label for="c-2" class="order__label">
+                                    есть счёт в другом банке
+                                </label>
+                            </li>
+                            <li>
+                                <input id="c-3" type="radio" name="client-info" class="order__radio">
+                                <label for="c-3" class="order__label">
+                                    нет счета
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-11 form--qr-code">
+                        <h4 class="heading heading--h5 heading--padding3 form--margin-bottom">
+                            Печатный QR-код
+                        </h4>
+                        <p class="heading heading--h6 heading--text-align2 heading--padding4 form--qr-code-comment">
+                            Укажите виды и количество необходимых POS-материалов с QR-кодом.
+                        </p>
+                    </div>    
+                    <div class="col-12 col-md-5 form--qr-code padding-bottom-2">    
+                        <label>Тейблтент</label>
+                        <select class="select">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 form--qr-code padding-bottom-2">
+                        <div>
+                            <p class="heading heading--h6 heading--text-align2 heading--padding4 form--qr-code-comment">
+                                Настольный держатель размера А5 для установки на стойке, прилавке или столиках
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 form--qr-code padding-bottom-2">    
+                        <label>Бейдж</label>
+                        <select class="select">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 form--qr-code padding-bottom-2">
+                        <p class="heading heading--h6 heading--text-align2 heading--padding4 form--qr-code-comment">
+                            Бейдж в формате А7 и лентой для ношения на шее
+                        </p>
+                    </div>   
+                    <div class="col-12 col-md-5 form--qr-code padding-bottom-2">    
+                        <label>Табличка на прищепке</label>
+                        <select class="select">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 form--qr-code padding-bottom-2">
+                        <p class="heading heading--h6 heading--text-align2 heading--padding4 form--qr-code-comment">
+                            Табличка размера А5 для крепления на ящике, коробке или трубчатой раме прилавка
+                        </p>
+                    </div>    
+                    <div class="col-12 col-md-5 form--qr-code padding-bottom-2">    
+                        <label>Папка для счёта</label>
+                        <select class="select">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 form--qr-code padding-bottom-2">
+                        <p class="heading heading--h6 heading--text-align2 heading--padding4 form--qr-code-comment">
+                            Небольшая папка для передачи клиенту счёта за заказ
+                        </p>
+                    </div>    
+                    <div class="col-12 col-md-5 form--qr-code padding-bottom-2">    
+                        <label>Наклейка на дверь</label>
+                        <select class="select">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 form--qr-code padding-bottom-2">
+                        <p class="heading heading--h6 heading--text-align2 heading--padding4 heading--line-height1">
+                            Наклейка с логотипами платёжных систем, для обозначения возможности приёма оплаты через QR-код
+                        </p>
+                    </div>
+                    <div id="contact" class="col-12 col-md-5">
+                        <h5 class="heading heading--h5 heading--padding3 form--margin-bottom">
+                            Контактное лицо
+                        </h5>
+                        <p class="heading heading--h6 heading--text-align2 heading--padding4 heading--line-height1">
+                            Информация о том, кто заказывает QR-код от имени юридического лица
+                        </p>
+                        <input type="text" placeholder="ФИО" class="input order__input">
+                        <input type="email" placeholder="Электронная почта" class="input order__input">
+                        <input type="text" placeholder="Контактный телефон" class="input order__input">
+                    </div>
+                    <div id="account" class="col-12 col-md-5 offset-md-1">
+                        <h5 class="heading heading--h5 heading--padding3 form--margin-bottom">
+                            Реквизиты счёта
+                        </h5>
+                        <p class="heading heading--h6 heading--text-align2 heading--padding4 heading--line-height1">
+                            На этот счёт будут перечисляться деньги, полученные через QR-код
+                        </p>
+                        <input type="text" placeholder="IBAN" class="input order__input">
+                        <input type="text" placeholder="BIC" class="input order__input">
+                        <input type="text" placeholder="Банк" class="input order__input">
+                    </div>
+                    <div class="col-12 col-md-11 form__padding">
+                        <ul>
+                            <li>
+                                <input id="c-4" type="checkbox" class="order__checkbox">
+                                <label for="c-4" class="order__label">
+                                    Гарантирую достоверность и правильность вышеуказанной информации.
+                                </label>
+                            </li>
+                            <li>
+                                <input id="c-5" type="checkbox" class="order__checkbox">
+                                <label for="c-5" class="order__label">
+                                    Разрешаем АО «Казкоммерцбанк» обрабатывать предоставленную персональную информацию и производить запросы, связанные с вышеуказанной информацией.
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col text--center">
+                        <button type="submit" class="button button--form form__button">Заказать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  <section class="footer main-container">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-4">
+                <h5 class="heading heading--h2 heading--left">
+                    Центр поддержки и коммуникаций ePay
+                </h5>
+            </div>
+            <div class="col-12 col-md-6 footer__right">
+                <div class="footer__vertical-tabs">
+                    <ul class="col-auto footer__menu margin-top-1">
+                        <li class="icon__container  icon__container--active icon--phone js-control"></li>
+                        <li class="icon__container icon--map-pin js-control"></li>
+                        <li class="icon__container icon--message-circle js-control"></li>
+                    </ul>
+                    <ul class="col-auto footer__menu-content">
+                        <li class="js-slide footer__js-block">
+                            <div>
+                                <h6 class="heading heading--h6 heading--margin3">
+                                    Call Center
+                                </h6>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 258 52 57
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    для г. Алматы и других регионов
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 330 00 22
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Отдел подключения
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 258 51 39
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Отдел технического сопровождения
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 258 51 39
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Руководитель службы ePay
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    epay@qazkom.kz
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Электронная почта
+                                </p>
+                            </div>
+                        </li>   
+                        <li class="js-slide footer__js-block">                                
+                            <div>
+                                <h6 class="heading heading--h6 heading--margin3">
+                                    Быстрый поиск
+                                </h6>
+                            </div>
+                            <div class="margin-top-half">
+                                <a href="" class="link link__footer link__footer--search">
+                                    Филиалы
+                                </a>
+                            </div>                                    
+                            <div class="margin-top-half">
+                                <a href="" class="link link__footer link__footer--search">
+                                    Банкоматы
+                                </a>
+                            </div>
+                            <div class="margin-top-half">
+                                <a href="" class="link link__footer link__footer--search">
+                                    Банковские киоски
+                                </a>
+                            </div>
+                        </li> 
+                        <li class="js-slide footer__js-block">
+                            <div>
+                                <h6 class="heading heading--h6 heading--margin3">
+                                    Коммуникации
+                                </h6>
+                            </div>
+                            <div class="margin-top-half margin-bottom-1">
+                                <p class="heading heading--h6 heading--padding1">
+                                    Мы в социальных сетях:
+                                </p>
+                            </div>                                    
+                            <div class="footer__social-icons">
+                                <a href="">
+                                    <div class="footer__social footer__social-fb"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-tw"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-vk"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-yt"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-in"></div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="link link__footer link__footer--communitcation">
+                                    Оставить отзыв
+                                </a>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <div class="container footer__bottom">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <p class="heading heading--h5 heading--margin5 text--center">
+                        Лицензия Национального Банка Республики Казахстан №1.2.16/222/32 от 02.12.2014г.
+                        <br>
+                        Copyright АО "Казкоммерцбанк". Все права защищены.
+                    </p>
+                </div>
+            </div>                          
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="" class="footer__copyright-logo"></a>
+            </div>
+        </div>  
+    </div>
+</section>
+    
+
+<script type="text/javascript" src="index.js"></script></body>
+</html>

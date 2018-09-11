@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-itunes-app" content="app-id=440635615">
+  <title>Document</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto col-md-5">
+                <a class="header__homebank" href="/">
+                    <img class="header__logo-wrapper" src="static/images/logo-homebank.png" alt="homebank-logo">
+                </a>
+                <a class="header__dot"></a>
+                <a>
+                    <img class="header__logo-wrapper" src="static/images/logo-visa.png" alt="visa-logo">
+                </a>
+            </div>
+            <div class="col-auto col-md-7 static">
+                <nav class="header__nav" id="js-header__nav">
+                    <a data-block="#js-connection">Предпринимателям</a>
+                    <a data-block="#js-steps">Владельцам карт</a>
+                    <a data-block="#js-benefits">О продукте</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header__ham-wrapper">
+        <div class="header__ham" id="js-header__ham">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>  
+            <span></span>
+        </div>
+    </div>
+</header>
+
+
+  <main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-5 offset-md-5 offset-lg-7">
+                <h1 class="heading heading--h1">Безналичная оплата через QR код</h1>
+
+                <p class="text text__main text__main--p">Новый платежный сервис на основе технологии QR платежей по картам Qazkom.</p>
+
+                <a href="order.html" class="button button--main">Заказать QR-код</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+  <section class="benefits main-container" id="js-benefits">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="heading heading--h2 heading--margin1 text--center">
+                        Homebank Scan & Pay - это удобно
+                </h2>
+            </div>
+        </div>
+        <!-- div class="margin-bottom-2 text--center">
+            <img src="static/images/steps.jpg" alt="steps">
+        </div> -->
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 benefits__description text--center">
+                <p>Новая технология компании VISA позволит совершать оплату любых товаров и услуг в торговых точках не используя кредитки или наличные средства. Технология QR платежей создана для быстрой и простой оплаты необходимых товаров и услуг, исключая использование покупателем POS-терминала. Оплата через QR - Это безналичная оплата товаров и услуг через приложение в телефоне.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-3">
+                <div class="benefits__card text--center">
+                    <img src="static/images/benefit-simple.png" alt="simple">
+                    <h4 class="heading heading--h4 heading--margin2">Просто</h4>
+                    <p class="text__benefits text__benefits--p">Просканируйте QR-код чтобы расплатиться за услугу или товар.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="benefits__card text--center">
+                    <img src="static/images/benefit-security.png" alt="secure">
+                    <h4 class="heading heading--h4 heading--margin2">Безопасно</h4>
+                    <p class="text__benefits text__benefits--p">Указывайте стоимость. Оплата защищена банком и картой Visa.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="benefits__card text--center">
+                    <img src="static/images/benefit-free.png" alt="free">
+                    <h4 class="heading heading--h4 heading--margin2">Бесплатно</h4>
+                    <p class="text__benefits text__benefits--p">Оплачивайте покупки через QR-код без скрытых комиссий</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="connection secondary-container" id="js-connection">
+    <div class="container">
+        <h2 class="heading heading--h2 heading--margin1 heading--left">
+            Как подключить услугу партнерам
+        </h2>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="margin-bottom-3">
+                    Чтобы интегрировать наш сервис Scan & Pay с вашим бизнесом достаточно сделать следующее:
+                </p>											
+                <ul class="list">
+                    <li class="list__item list__item--large">
+                        <h4 class="heading heading--h5 heading--margin3 padding-bottom-1">
+                            Существующие партнеры Qazkom
+                        </h4>
+                        <p>					
+                            Для существующих эквайринговых партнеров Qazkom установка сервиса приема QR платежей происходит в автоматическом режиме.
+                        </p>
+                    </li>
+                    <li class="list__item list__item--large">
+                        <h4 class="heading heading--h5 heading--margin3 padding-bottom-1">
+                            Новым партнерам
+                        </h4>
+                        <p>						 								
+                            Чтобы начать принимать QR-платежи, заполните
+                            <a href="" class="link link__connection--apply"> 
+                                краткую заявку на подключение.
+                            </a> Менеджеры команды эквайринга Qazkom незамедлительно свяжутся с вами и помогут заполнить необходимые документы.
+                        </p>
+                    </li>
+                </ul>				
+            </div>
+            <div class="display-sm-none display-md-none col-md-3 offset-1">
+                <div>
+                    <img src="static/images/connection-block.png">
+                </div>
+            </div>				
+        </div>
+    </div>	
+    <div class="container connection__cost padding-top-4">
+        <h3 class="heading heading--h5 heading--margin3 text--center">
+            Стоимость использования
+        </h3>
+        <div class="row">
+            <div class="col-12 col-md connection__cost--border padding-right-1">
+                <div class="row connection__cost--padding align-items-center">
+                    <div class="col-auto">
+                        <em class="connection__amount">0</em>
+                    </div>
+                    <div class="col">
+                        <h4 class="heading heading--h4 heading--margin2 transform--none">
+                            Тенге
+                        </h4>
+                        <p>
+                            Подключение к сервису и установка
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md connection__cost--border">
+                <div class="row connection__cost--padding align-items-center">
+                    <div class="col-auto">
+                        <em class="connection__amount">0</em>
+                    </div>
+                    <div class="col">
+                        <h4 class="heading heading--h4 heading--margin2 transform--none">
+                            Тенге
+                        </h4>
+                        <p>
+                            Дальнейшее
+                            <br>
+                            обслуживание
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md connection__cost--border">
+                <div class="row connection__cost--padding align-items-center">
+                    <div class="col">					
+                        <h4 class="heading heading--h4 heading--margin2 transform--none">
+                            Комиссии за транзакции
+                        </h4>
+                        <p>
+                            согласно индивидуальных условий
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>	
+        <div class="row connection__documents text--center">
+            <div class="col-12">
+                <button id="show-documents" class="button button--connection">
+                    Показать список документов
+                </button>
+            </div>
+            <div class="col-12">
+                <p class="margin-bottom-2">
+                    для подключения к системе Homebank Scan & Pay
+                </p>
+            </div>
+            <div id="documents-list" class="connection__documents--list">
+                <ul class="list padding-left-half">
+                    <li class="list__item list__item--small">
+                        Заполненная анкета с печатью и подписью.
+                    </li>
+                    <li class="list__item list__item--small">
+                        Полный пакет учредительных документов: устав, свидетельство о государственной регистрации (перерегистрации), копии удостоверений личности, РНН и ИИН учредителей(-я) и других лиц, имеющих право подписи финансовых документов.	
+                    </li>
+                    <li class="list__item list__item--small">
+                        Карточка с образцами подписей руководителей и оттиска печати. Бланк можно получить в любом отделении банка или скачать с сайта: с печатью или без печати.
+                    </li>
+                    <li class="list__item list__item--small">
+                        Копии удостоверения личности руководителей, имеющих право подписи финансовых документов.
+                    </li>
+                </ul>
+            </div>
+        </div>		
+    </div>
+</section>
+
+  <div class="steps" id="js-steps">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <h1 class="heading heading--h2 heading--margin1">Как пользоваться <span class="steps__h2-span">Scan & Pay</span> владельцам карт QAZKOM</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="steps__desc margin-bottom-1">Чтобы воспользоваться сервисом Scan & Pay достаточно совершить следующие шаги:</p>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slide padding-bottom-1"> 
+      <p class="slider__paragraph"><b class="slider__paragraph--bold">Установите</b>последнюю версию приложения Homebank для Android или iOS</p>
+      <img class="slider__img" src="static/images/step_1.png" alt="step1"/>
+      <img class="slider__img-mobile" src="static/images/step_1_mobile.png">
+    </div>
+    <div class="slide padding-bottom-1">
+      <p class="slider__paragraph"><b class="slider__paragraph--bold">Авторизуйтесь</b>в приложении Homebank и перейдите в раздел QR платежей</p>
+      <img class="slider__img" src="static/images/step_2.png" alt="step2"/>
+      <img class="slider__img-mobile" src="static/images/step_2_mobile.png">
+    </div>
+    <div class="slide padding-bottom-1">
+      <p class="slider__paragraph"><b class="slider__paragraph--bold">Сканируйте</b>QR-коды для оплаты</p>
+      <img class="slider__img" src="static/images/step_3.png" alt="step3"/>
+      <img class="slider__img-mobile" src="static/images/step_3_mobile.png">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row padding-top-1">
+      <div class="col">
+        <div class="steps__download-info">
+          <p>Если у Вас нет приложения, то установите его легко и просто, найдите мобильное приложение “Homebank.kz” или воспользуйтесь быстрой ссылкой:</p>
+          <div class="margin-top-2 margin-bottom-2">
+            <a href="https://play.google.com/store/apps/details?id=kz.kkb.homebank" target="_blank">
+              <img class="steps__download-img" src="static/images/badge-android.png"/>
+            </a>
+            <a href="https://itunes.apple.com/lv/app/homebank-kz/id440635615" target="_blank">
+              <img class="steps__download-img" src="static/images/badge-ios.png"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="form main-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class="heading heading--h2 heading--margin1">Пора расширять способы оплаты Вашего бизнеса</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-9">
+                <h4 class="heading heading--h5 text--center">Заявка на поключение вашей организации к системе платежей Homebank Scan & Pay</h4>
+            </div>
+        </div>
+ 
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-8 form__form">				
+                <form class="row justify-content-center" action="">
+                    <div class="col-12 col-md-5">
+                        <input placeholder="Имя" class="form__input input" type="text">
+                    </div>		
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <input placeholder="Название компании" id="user_company" class="form__input input" type="text">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <input placeholder="Контактный телефон" id="user_phone" class="form__input input" autocomplete="off" type="text">
+                    </div>		
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <select placeholder="Город" class="form__input select">
+                            <option class="select">Алматы</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <input placeholder="Электронная почта" class="form__input input" type="text">
+                    </div>		
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <button id="btn" type="submit" class="form__button button button--form">Отправить »</button>
+                    </div>
+                </form>	
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <section class="footer main-container">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-4">
+                <h5 class="heading heading--h2 heading--left">
+                    Центр поддержки и коммуникаций ePay
+                </h5>
+            </div>
+            <div class="col-12 col-md-6 footer__right">
+                <div class="footer__vertical-tabs">
+                    <ul class="col-auto footer__menu margin-top-1">
+                        <li class="icon__container  icon__container--active icon--phone js-control"></li>
+                        <li class="icon__container icon--map-pin js-control"></li>
+                        <li class="icon__container icon--message-circle js-control"></li>
+                    </ul>
+                    <ul class="col-auto footer__menu-content">
+                        <li class="js-slide footer__js-block">
+                            <div>
+                                <h6 class="heading heading--h6 heading--margin3">
+                                    Call Center
+                                </h6>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 258 52 57
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    для г. Алматы и других регионов
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 330 00 22
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Отдел подключения
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 258 51 39
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Отдел технического сопровождения
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    +7 (727) 258 51 39
+                                </p>
+                            </div>
+                            <div class="footer__small-block">
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Руководитель службы ePay
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1">
+                                    epay@qazkom.kz
+                                </p>
+                            </div>
+                            <div>
+                                <p class="heading heading--h6 heading--padding1 heading--text-align">
+                                    Электронная почта
+                                </p>
+                            </div>
+                        </li>   
+                        <li class="js-slide footer__js-block">                                
+                            <div>
+                                <h6 class="heading heading--h6 heading--margin3">
+                                    Быстрый поиск
+                                </h6>
+                            </div>
+                            <div class="margin-top-half">
+                                <a href="" class="link link__footer link__footer--search">
+                                    Филиалы
+                                </a>
+                            </div>                                    
+                            <div class="margin-top-half">
+                                <a href="" class="link link__footer link__footer--search">
+                                    Банкоматы
+                                </a>
+                            </div>
+                            <div class="margin-top-half">
+                                <a href="" class="link link__footer link__footer--search">
+                                    Банковские киоски
+                                </a>
+                            </div>
+                        </li> 
+                        <li class="js-slide footer__js-block">
+                            <div>
+                                <h6 class="heading heading--h6 heading--margin3">
+                                    Коммуникации
+                                </h6>
+                            </div>
+                            <div class="margin-top-half margin-bottom-1">
+                                <p class="heading heading--h6 heading--padding1">
+                                    Мы в социальных сетях:
+                                </p>
+                            </div>                                    
+                            <div class="footer__social-icons">
+                                <a href="">
+                                    <div class="footer__social footer__social-fb"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-tw"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-vk"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-yt"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer__social footer__social-in"></div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="link link__footer link__footer--communitcation">
+                                    Оставить отзыв
+                                </a>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <div class="container footer__bottom">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <p class="heading heading--h5 heading--margin5 text--center">
+                        Лицензия Национального Банка Республики Казахстан №1.2.16/222/32 от 02.12.2014г.
+                        <br>
+                        Copyright АО "Казкоммерцбанк". Все права защищены.
+                    </p>
+                </div>
+            </div>                          
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="" class="footer__copyright-logo"></a>
+            </div>
+        </div>  
+    </div>
+</section>
+    
+
+<script type="text/javascript" src="index.js"></script></body>
+</html>
